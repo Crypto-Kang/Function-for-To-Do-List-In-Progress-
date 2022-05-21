@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <input type="text" id="inp">
+    <button id="button">Add to list</button>
+    <ul id="list">
+        
+    </ul>
+    
+    
+
+
+
+    
+    <!-- document.getElementById("add").onclick  = function() {      var node = document.createElement("Li");     var text = document.getElementById("user_input").value;  	var textnode=document.createTextNode(text);     node.appendChild(textnode);     document.getElementById("list_item").appendChild(node); } -->
+
+    <input type="text" id="idea">
+    <input type="button" value="add to list" id="add">>
+    <ul id="list">
+    </ul>
+
+    <script>
+// We need to get the value from the input text bar, so we can add it to our "To do list". We will assign the input text to a variable.
+var text = getElementById("idea").value;
+
+// We assign another variable to be our list which will include our input text.
+    var li = <li> + text + </li>;
+
+    // By appeding the child, we can add text from our list onto our unordered list
+    document.getElementById("list").appendChild(li);
+
+    // We will create a function to be called when the add-to-list button is clicked. It will allow the text to be appended onto the list
+    document.getElementById("add").onclick = function(){
+        
+        var text = document.getElementById("idea").value;
+
+        var textNode = document.createTextNode("li");
+
+        "list".appendChild(textNode);
+
+        document.getElementById(li).appendChild(list);
+    }
+
+    </script>
+
+
+
+
+<input type="text" id="idea">
+    <input type="button" value="add to list" id="add">>
+    <ul id="list">
+    </ul>
+
+    <script>
+        document.getElementById("add").onclick = function(){
+            var list = document.getElementById("list");
+
+            var li = document.createElement("li");
+
+            var text = document.getElementById("idea").value;
+            
+            var idea = document.getElementById("idea");
+
+            var textNode = document.createTextNode(idea);
+
+            
+
+            list.appendChild(li);
+            li.appendChild(text);
+            // Attach the text node to the li 
+            li.appendChild(textNode)
+        }
+    </script>
+
+
+
+
+
+
+
+<input type="text" id="idea">
+    <input type="button" value="add to list" id="add">>
+    <ul id="list">
+        <li>Test</li>
+    </ul>
+
+    <script>
+        document.getElementById("add").onclick = function(){
+            const list = document.getElementById("list");
+
+            const il = document.createElement('li');
+
+            const textNode = document.createTextNode("Hello");
+
+            il.appendChild(textNode);
+            list.appendChild(il)
+
+        }
+    </script>
+
+
+
+
+
+<input type="text" id="user_input">
+<input id="add" type="button" value="Add New" onclick= buttonClick()>
+<ol id="list_item"></ol>
+
+
+<script>
+    document.getElementById("add").onclick = function buttonClick() {
+        var node = document.createElement("li")
+        var text = document.getElementById("user_input").value;
+        var textnode = document.createTextNode(text);
+        node.appendChild(textnode);
+        document.getElementById("list_item").appendChild(node)
+
+    }
+</script>
+
+
+
+
+
+<input type="text" id="user_input">
+<input id="add" type="button" value="Add New">
+<ol id="list_item"></ol>
+<li id="list">hiasfohisd</li>
+
+<script>
+var button = document.getElementById("add");
+var ul = document.getElementById("list_item");
+var text = document.getElementById("user_input");
+
+button.addEventListener("click", function(){
+    var li = document.createElement("li");
+    li.innerText = text.value;
+    ul.appendChild(li)
+})
+</script>
+
+
+</body>
+</html>
